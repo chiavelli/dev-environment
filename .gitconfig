@@ -1,0 +1,19 @@
+[core]
+	editor = code --wait
+[user]
+	name = Firstname Lastname
+	email = email@address.com
+[diff]
+	difftool = vscode
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+	guitool = vscode
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[alias]
+	suir = submodule update --init --recursive
+	l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+    s = status
