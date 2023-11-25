@@ -39,3 +39,6 @@ parse_git_branch() {
     echo "($branch)$indicators"
   fi
 }
+
+setopt PROMPT_SUBST
+export PROMPT='%1~ %F{cyan}$(parse_git_branch)%f %# '
